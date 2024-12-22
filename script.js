@@ -12,8 +12,8 @@ const fechaAnterior = document.getElementById("fecha-anterior")
 const fechaSelect = document.getElementById("fecha-select")
 const fechaSiguiente = document.getElementById("fecha-siguiente")
 
-// const urlAPI = "https://api-promiedos.onrender.com" // URL de producción
-const urlAPI = "http://localhost:5000" // URL de desarrollo
+const urlAPI = "https://api-promiedos.onrender.com" // URL de producción
+// const urlAPI = "http://localhost:5000" // URL de desarrollo
 
 let cache = []
 let tablaPuntos = []
