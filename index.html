@@ -1,0 +1,64 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Puntos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <div id="ligas-container"></div>
+        <div class="table-container">
+            <h1>Tabla de Puntos</h1>
+            <h2 id="h2-liga-seleccionada"></h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Equipo</th>
+                        <th>Pts</th>
+                        <th>PJ</th>
+                        <th>PG</th>
+                        <th>PE</th>
+                        <th>PP</th>
+                        <th>GF</th>
+                        <th>GC</th>
+                        <th>DIF</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla-puntos">
+                    <!-- Las filas se generarán con JavaScript -->
+                </tbody>
+            </table>
+            <div id="referencias-container"></div>
+        </div>    
+        <div class="calculator-container">
+            <h2>Partidos Restantes</h2>
+            <div id="selector-fechas-container">
+                <button id="fecha-anterior">&lt;</button>
+                <select id="fecha-select"></select>
+                <button id="fecha-siguiente">&gt;</button>
+            </div>
+            <h2 id="indicador-fecha"></h2>
+            <div id="matches-container">
+                <!-- Aquí se generarán los partidos y sus inputs de resultados -->
+            </div>
+            <div id="buttons-container">
+                <button onclick="resultadosRandom()">Generar Resultados Aleatorios</button>
+                <button onclick="restablecerResultados()">Restablecer</button>
+            </div>
+        </div>
+    </div>
+    <div id="loading-screen" class="loading-screen">
+        <div class="spinner"></div>
+        <p>El servidor se está iniciando, por favor espera...</p>
+        <p id="loading-p"></p>
+    </div>
+
+    <div id="notification" class="notification hidden">
+        <p id="notification-message"></p>
+    </div>    
+<script src="script.js"></script>
+</body>
+</html>
